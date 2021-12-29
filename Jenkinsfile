@@ -9,7 +9,7 @@ pipeline {
                 '''
             }
         }
-        stage('Change file'){
+        stage('File not change'){
             steps {
                 sh '''
                 echo "Files in repo NOT changed"
