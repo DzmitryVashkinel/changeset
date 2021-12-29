@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                 echo "Files in repo NOT changed"
+                echo "Hello"
                 '''
             }
         }
