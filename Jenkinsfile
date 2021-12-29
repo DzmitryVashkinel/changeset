@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Change file'){
+            when { changeset "repo/*" }
+            steps {
+                sh '''
+                echo "Files in repo changed"
+                '''
+            }
+        }
+        stage('Change file'){
+            steps {
+                sh '''
+                echo "Files in repo NOT changed"
+                '''
+            }
+        }
+    }
+}
