@@ -1,3 +1,12 @@
+scm {
+    git {
+        remote {
+            name('origin') 
+            url('https://github.com/DzmitryVashkinel/changeset.git')
+        }
+        branch('${sha1}')
+    }
+}
 pipeline {
     agent any
     stages {
